@@ -676,83 +676,50 @@ main .salud_laboral h2 {
 }
 
 /*!----------------MAIN RESERVA--------*/
-main .reserva h2 {
-    text-align: center;
+main .flex_reserva {
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-main .reserva h3 {
-    font-size: 17px;
+main .reserva {
+    width: 70%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 15px;
+}
+
+main .flex_reserva .reserva h2 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+
+main .flex_.reserva .reserva h3 {
+    font-size: 16px;
     font-weight: 400;
 }
 
-main .dudas h2 {
+main .flex_dudas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .flex_dudas .dudas{
+    width: 70%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main .flex_dudas .dudas h2 {
     text-align: center;
-}
-/* .reserva_hora h2{
-    margin-bottom: 20px;
-}
-
-.reserva_hora{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
 }
-.reserva_hora form .genero{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.reserva_hora form .dia_atencion{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.reserva_hora form .hora_atencion{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.reserva_hora form .hora_sabados{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.reserva_hora form .motivo_consulta{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-textarea{
-    width: 400px;
-    height: 300px;
-}
-
-.dudas h2{
-    margin: 20px;
-}
-
-.dudas{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.dudas div .texto_dudas{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-} */
 
 /*!----------------FOOTER--------------*/
 footer{
@@ -1317,7 +1284,23 @@ footer h3 span{
 }
 
 /*!---------MEDIA QUERY RESERVA------*/
+@media screen and (max-width: 700px) {
+    main .flex_reserva .reserva h2 {
+        font-size: 25px;
+    }
+    main .flex_dudas .dudas h2 {
+        font-size: 25px;
+    }
+}
 
+@media screen and (max-width: 500px) {
+    main .flex_reserva .reserva h2 {
+        font-size: 20px;
+    }
+    main .flex_dudas .dudas h2 {
+        font-size: 20px;
+    }
+}
 /*!--------MEDIA QUERY FOOTER------*/
 @media screen and (max-width:900px) {
     footer .piedepagina{
