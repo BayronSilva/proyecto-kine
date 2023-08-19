@@ -1,0 +1,91 @@
+/*!-------------TIPOGRAFIA----------*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+/*!-------------RESET---------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.boton{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color:white;
+}
+
+    /*!-------PSEUDO CLASES------*/
+    .boton:hover {
+        background-color: white;
+        border: 2px solid black;
+        color: black;
+    }
+
+    .boton:active {
+        color: darkred;
+    }
+
+    .servicios_hermanos div .tarjetas div i:hover {
+        color:darkred;
+    }
+
+    .servicios_hermanos div .tarjetas div i:active {
+        color: white;
+    }
+
+        /*!-------PSEUDOELEMENTOS-----*/
+        header h1::selection {
+            background-color: black;
+        }
+    
+        header h1 span::selection {
+            background-color: black;
+            color: white;
+        }
+    
+        p::selection {
+            color: white;
+            background-color: black;
+        }
+    
+        h2::selection {
+            color: white;
+            background-color: black;
+        }
+    
+        h2::selection {
+            color: white;
+            background-color: black;
+        }
+    
+        
+        a::selection {
+            background-color: black;
+            color: white;
+        }
+        
+        footer .piedepagina iframe::selection {
+            background-color: black;
+        }
+        
+        footer .piedepagina .iconos img::selection {
+            background-color: black;
+        }
+        
+        h3::selection {
+            color: white;
+            background-color: black;
+        }
+    
+        footer .piedepagina h3 span::selection {
+            background-color: black;
+            color: white;
+        }

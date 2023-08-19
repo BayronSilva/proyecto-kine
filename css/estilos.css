@@ -1,0 +1,1038 @@
+/*!-------------TIPOGRAFIA----------*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+/*!-------------RESET---------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+.boton {
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: black;
+  color: white; }
+
+/*!-------PSEUDO CLASES------*/
+.boton:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black; }
+
+.boton:active {
+  color: darkred; }
+
+.servicios_hermanos div .tarjetas div i:hover {
+  color: darkred; }
+
+.servicios_hermanos div .tarjetas div i:active {
+  color: white; }
+
+/*!-------PSEUDOELEMENTOS-----*/
+header h1::selection {
+  background-color: black; }
+
+header h1 span::selection {
+  background-color: black;
+  color: white; }
+
+p::selection {
+  color: white;
+  background-color: black; }
+
+h2::selection {
+  color: white;
+  background-color: black; }
+
+h2::selection {
+  color: white;
+  background-color: black; }
+
+a::selection {
+  background-color: black;
+  color: white; }
+
+footer .piedepagina iframe::selection {
+  background-color: black; }
+
+footer .piedepagina .iconos img::selection {
+  background-color: black; }
+
+h3::selection {
+  color: white;
+  background-color: black; }
+
+footer .piedepagina h3 span::selection {
+  background-color: black;
+  color: white; }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10; }
+  header .navbar {
+    background-color: #788393;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white; }
+    header .navbar .container-fluid .navbar-brand h1 {
+      font-family: 'Rubik Dirt', cursive;
+      color: whitesmoke;
+      font-weight: 500; }
+      header .navbar .container-fluid .navbar-brand h1 span {
+        color: black; }
+
+/*!-----------HEADER-------------*/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10; }
+  header .navbar {
+    background-color: #788393;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white; }
+
+/*!--------------MAIN INDEX-------------*/
+main .hero div {
+  background-image: url(../img/foto_herosection.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  main .hero div h2 {
+    font-size: 75px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center; }
+  main .hero div p {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.214);
+    padding: 30px; }
+
+main .carrusel {
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  main .carrusel h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 31px;
+    color: black;
+    margin-top: 20px; }
+  main .carrusel .carousel .carousel-inner .carousel-item img {
+    width: 600px;
+    height: 400px; }
+  main .carrusel .carousel .carousel-inner .carousel-item .carousel-caption a h5 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
+    font-size: 20px;
+    color: white; }
+
+main .contenedor_valores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; }
+  main .contenedor_valores .valores {
+    width: 70%;
+    height: 70%;
+    margin: 30px;
+    background-position: center;
+    color: black;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 5px solid #040f16; }
+    main .contenedor_valores .valores div {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main .contenedor_valores .valores div p {
+        padding-top: 10px; }
+
+main .servicios_hermanos div h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 31px;
+  color: black;
+  text-align: center; }
+
+main .servicios_hermanos div .tarjetas {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; }
+  main .servicios_hermanos div .tarjetas .paulettelash {
+    width: 280px;
+    height: 500px;
+    box-shadow: 10px -11px 9px -2px rgba(22, 21, 21, 0.75);
+    -webkit-box-shadow: 10px -11px 9px -2px rgba(22, 21, 21, 0.75);
+    -moz-box-shadow: 10px -11px 9px -2px rgba(22, 21, 21, 0.75);
+    background-color: #040f16;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    main .servicios_hermanos div .tarjetas .paulettelash img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover; }
+    main .servicios_hermanos div .tarjetas .paulettelash h3 {
+      text-align: center;
+      margin-bottom: 15px; }
+    main .servicios_hermanos div .tarjetas .paulettelash p {
+      margin-bottom: 5px; }
+    main .servicios_hermanos div .tarjetas .paulettelash .cejas {
+      margin-bottom: 25px; }
+    main .servicios_hermanos div .tarjetas .paulettelash .bi-instagram {
+      font-size: 40px;
+      color: white; }
+  main .servicios_hermanos div .tarjetas .greenfort {
+    width: 280px;
+    height: 500px;
+    box-shadow: 10px -11px 9px -2px rgba(22, 21, 21, 0.75);
+    -webkit-box-shadow: 10px -11px 9px -2px rgba(22, 21, 21, 0.75);
+    -moz-box-shadow: 10px -11px 9px -2px rgba(22, 21, 21, 0.75);
+    background-color: #040f16;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    main .servicios_hermanos div .tarjetas .greenfort img {
+      width: 100%;
+      height: 250px; }
+    main .servicios_hermanos div .tarjetas .greenfort h3 {
+      text-align: center;
+      margin-bottom: 15px; }
+    main .servicios_hermanos div .tarjetas .greenfort p {
+      margin: 0px; }
+    main .servicios_hermanos div .tarjetas .greenfort .bi-instagram {
+      font-size: 40px;
+      color: white; }
+
+/*!---------------MAIN KINESIOLOGIA-----------*/
+main .kine_musculo {
+  padding: 30px; }
+  main .kine_musculo div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    main .kine_musculo div .info_kinemusculo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center; }
+      main .kine_musculo div .info_kinemusculo h2 {
+        font-size: 25px;
+        font-weight: 600; }
+      main .kine_musculo div .info_kinemusculo p {
+        padding: 20px; }
+    main .kine_musculo div img {
+      width: 600px;
+      height: 400px; }
+
+main .neuro_adulto {
+  background-color: #040f16;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  main .neuro_adulto .info_neuro {
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center; }
+    main .neuro_adulto .info_neuro img {
+      text-align: start;
+      width: 600px;
+      height: 400px; }
+    main .neuro_adulto .info_neuro div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      main .neuro_adulto .info_neuro div h2 {
+        font-size: 25px;
+        font-weight: 600; }
+      main .neuro_adulto .info_neuro div p {
+        padding: 20px;
+        margin-bottom: 20px; }
+
+main .kine_respiratoria {
+  padding: 30px; }
+  main .kine_respiratoria div {
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    main .kine_respiratoria div div {
+      width: 80%;
+      text-align: start;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center; }
+      main .kine_respiratoria div div h2 {
+        font-size: 25px;
+        font-weight: 600; }
+      main .kine_respiratoria div div p {
+        padding: 20px;
+        margin-bottom: 20px; }
+    main .kine_respiratoria div img {
+      width: 600px;
+      height: 400px; }
+
+main .domicilio {
+  padding: 30px; }
+  main .domicilio div {
+    background-color: #040f16;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center; }
+    main .domicilio div img {
+      width: 600px;
+      height: 400px; }
+    main .domicilio div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      main .domicilio div div h2 {
+        font-size: 25px;
+        font-weight: 600; }
+      main .domicilio div div p {
+        padding: 20px;
+        margin-bottom: 20px; }
+
+/*!---------------MAIN MASAJES Y RECOVERTY-----------*/
+main .masaje_relajante {
+  padding: 30px; }
+  main .masaje_relajante div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #040f16;
+    color: white;
+    padding: 10px; }
+    main .masaje_relajante div .flex_masjrelajante {
+      display: flex;
+      flex-direction: column; }
+      main .masaje_relajante div .flex_masjrelajante .info_masjrelajante {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+        main .masaje_relajante div .flex_masjrelajante .info_masjrelajante h2 {
+          font-size: 25px;
+          font-weight: 600; }
+      main .masaje_relajante div .flex_masjrelajante .botones_masjrelajante {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+        main .masaje_relajante div .flex_masjrelajante .botones_masjrelajante div {
+          flex-direction: column; }
+          main .masaje_relajante div .flex_masjrelajante .botones_masjrelajante div p {
+            text-align: center; }
+    main .masaje_relajante div img {
+      width: 600px;
+      height: 400px; }
+
+main .masaje_descontracturante {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px; }
+  main .masaje_descontracturante img {
+    width: 300px;
+    height: 400px; }
+  main .masaje_descontracturante div {
+    padding: 10px; }
+    main .masaje_descontracturante div .info_masjdescontracturante {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center; }
+      main .masaje_descontracturante div .info_masjdescontracturante h2 {
+        font-size: 25px;
+        font-weight: 600; }
+    main .masaje_descontracturante div .botones_masjdescontracturante {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+      main .masaje_descontracturante div .botones_masjdescontracturante div p {
+        text-align: center; }
+
+main .masaje_cranealykine {
+  background-color: #005d7c84;
+  padding: 30px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  main .masaje_cranealykine .masaje_craneal {
+    background-color: #040f16;
+    width: 450px;
+    height: 650px;
+    border: 1px solid white;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    main .masaje_cranealykine .masaje_craneal img {
+      width: 100%;
+      height: 70%;
+      padding: 5px; }
+    main .masaje_cranealykine .masaje_craneal div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      padding: 5px; }
+      main .masaje_cranealykine .masaje_craneal div h2 {
+        font-size: 25px; }
+      main .masaje_cranealykine .masaje_craneal div p {
+        padding: 5px;
+        margin: 0px; }
+  main .masaje_cranealykine .masaje_kine {
+    background-color: #040f16;
+    width: 450px;
+    height: 650px;
+    border: 1px solid white;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    main .masaje_cranealykine .masaje_kine img {
+      width: 100%;
+      height: 70%;
+      padding: 5px; }
+    main .masaje_cranealykine .masaje_kine div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      padding: 5px; }
+      main .masaje_cranealykine .masaje_kine div h2 {
+        font-size: 25px; }
+      main .masaje_cranealykine .masaje_kine div p {
+        padding: 5px;
+        margin: 0px; }
+
+main .recovery {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+  main .recovery h2 {
+    font-size: 25px; }
+  main .recovery div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .recovery div .img_botas {
+      width: 55%;
+      height: 400px;
+      margin: 20px; }
+    main .recovery div .img_masjrecovery {
+      width: 55%;
+      height: 400px;
+      margin: 20px; }
+  main .recovery .info_recovery {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px; }
+    main .recovery .info_recovery p {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+    main .recovery .info_recovery p {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+    main .recovery .info_recovery p {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+    main .recovery .info_recovery .botones_recovery {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main .recovery .info_recovery .botones_recovery div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px; }
+        main .recovery .info_recovery .botones_recovery div p {
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
+/*!------------------MAIN SALUD LABORAL--------*/
+main .salud_laboral {
+  background-color: #005d7c74;
+  background-position: center;
+  margin: 60px;
+  padding: 30px;
+  height: 80%vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .salud_laboral h2 {
+    margin-bottom: 20px; }
+
+main .contacto_saludlaboral div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+  main .contacto_saludlaboral div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start; }
+    main .contacto_saludlaboral div div h3 {
+      margin-bottom: 20px; }
+  main .contacto_saludlaboral div .saludlaboral_imagen {
+    width: 300px;
+    height: 400px; }
+
+/*!----------------MAIN RESERVA--------*/
+main .flex_reserva {
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  main .flex_reserva .reserva {
+    width: 70%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 15px; }
+    main .flex_reserva .reserva h2 {
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 30px; }
+    main .flex_reserva .reserva h3 {
+      font-size: 16px;
+      font-weight: 400; }
+
+main .flex_dudas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  main .flex_dudas .dudas {
+    width: 70%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+    main .flex_dudas .dudas h2 {
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 30px; }
+
+/*!--MAIN FOOTER--*/
+footer {
+  background-color: #aab9cf;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 20px;
+  font-size: 17px; }
+  footer .piedepagina {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: "iconos horarios iframe" "h3 h3 h3"; }
+    footer .piedepagina .iconos {
+      justify-self: start;
+      align-self: start;
+      margin-top: 50px;
+      grid-area: iconos; }
+      footer .piedepagina .iconos div {
+        display: flex;
+        justify-content: start;
+        align-items: center; }
+        footer .piedepagina .iconos div img {
+          width: 30px;
+          height: 30px;
+          margin: 20px; }
+        footer .piedepagina .iconos div p {
+          margin: 0px; }
+      footer .piedepagina .iconos div {
+        display: flex;
+        justify-content: start;
+        align-items: center; }
+        footer .piedepagina .iconos div img {
+          width: 30px;
+          height: 30px;
+          margin: 20px; }
+        footer .piedepagina .iconos div p {
+          margin: 0px; }
+      footer .piedepagina .iconos div {
+        display: flex;
+        justify-content: start;
+        align-items: center; }
+        footer .piedepagina .iconos div img {
+          width: 30px;
+          height: 30px;
+          margin: 20px; }
+        footer .piedepagina .iconos div p {
+          margin: 0px; }
+    footer .piedepagina .horarios {
+      justify-self: start;
+      align-self: center;
+      grid-area: horarios;
+      margin-top: 20px; }
+      footer .piedepagina .horarios h2 {
+        font-weight: 200;
+        padding-bottom: 0px;
+        margin-bottom: 15px; }
+    footer .piedepagina div iframe {
+      width: 100%;
+      justify-self: center;
+      align-self: center;
+      padding: 15px;
+      grid-area: iframe; }
+    footer .piedepagina h3 {
+      background-color: #005e7c;
+      color: white;
+      text-decoration: none;
+      font-family: 'Rubik Dirt', cursive;
+      border: 1px solid black;
+      margin-bottom: 0%;
+      grid-area: h3; }
+      footer .piedepagina h3 span {
+        color: black; }
+
+/*!---------MEDIA QUERY HEADER---------*/
+@media screen and (max-width: 1000px) {
+  header {
+    position: static; } }
+
+/*!---------MEDIA QUERY INDEX------*/
+@media screen and (max-width: 800px) {
+  main .hero div h2 {
+    font-size: 60px; }
+  main .hero div p {
+    font-size: 14px;
+    padding: 20px; }
+  main .hero div .boton {
+    font-size: 16px; } }
+
+@media screen and (max-width: 630px) {
+  main .hero div p {
+    padding: 10px; }
+  main .hero div .boton {
+    font-size: 14px;
+    padding: 5px; }
+  main .servicios_hermanos div .tarjetas {
+    flex-direction: column; }
+  main .carrusel .carousel .carousel-inner .carousel-item img {
+    width: 550px;
+    height: 350px; } }
+
+@media screen and (max-width: 540px) {
+  main .carrusel .carousel .carousel-inner .carousel-item img {
+    width: 500px;
+    height: 300px; }
+  main .carrusel h2 {
+    font-size: 25px; }
+  main .servicios_hermanos div h2 {
+    font-size: 25px; } }
+
+@media screen and (max-width: 470px) {
+  main .hero div h2 {
+    font-size: 40px;
+    padding: 20px; }
+  main .carrusel .carousel .carousel-inner .carousel-item img {
+    width: 450px;
+    height: 250px; } }
+
+@media screen and (max-width: 390px) {
+  main .carrusel .carousel .carousel-inner .carousel-item img {
+    width: 400px;
+    height: 200px; } }
+
+/*!---------MEDIA QUERY KINESIOLOGIA------*/
+@media screen and (max-width: 1080px) {
+  main .kine_musculo div img {
+    width: 500px;
+    height: 300px; }
+  main .neuro_adulto .info_neuro img {
+    width: 500px;
+    height: 300px; }
+  main .kine_respiratoria div img {
+    width: 500px;
+    height: 300px; }
+  main .domicilio div img {
+    width: 500px;
+    height: 300px; } }
+
+@media screen and (max-width: 940px) {
+  main .kine_musculo div .info_kinemusculo h2 {
+    font-size: 20px; }
+  main .kine_musculo div .info_kinemusculo p {
+    font-size: 14px; }
+  main .neuro_adulto .info_neuro div h2 {
+    font-size: 20px; }
+  main .neuro_adulto .info_neuro div p {
+    font-size: 14px; }
+  main .kine_respiratoria div div h2 {
+    font-size: 20px; }
+  main .kine_respiratoria div div p {
+    font-size: 14px; }
+  main .domicilio div div h2 {
+    font-size: 20px; }
+  main .domicilio div div p {
+    font-size: 14px; } }
+
+@media screen and (max-width: 850px) {
+  main .kine_musculo {
+    padding: 15px; }
+  main .kine_musculo div {
+    flex-direction: column-reverse; }
+  main .kine_musculo div .info_kinemusculo h2 {
+    margin-top: 15px;
+    margin-bottom: 0px; }
+  main .kine_musculo div .info_kinemusculo p {
+    margin-bottom: 0px;
+    padding: 10px; }
+  main .kine_musculo div .info_kinemusculo .boton {
+    padding: 5px;
+    font-size: 16px; }
+  main .neuro_adulto .info_neuro {
+    flex-direction: column; }
+  main .neuro_adulto .info_neuro div h2 {
+    margin-top: 15px; }
+  main .neuro_adulto .info_neuro div p {
+    margin-bottom: 0px;
+    padding: 10px; }
+  main .neuro_adulto .info_neuro div .boton {
+    padding: 5px;
+    font-size: 16px; }
+  main .kine_respiratoria {
+    padding: 15px; }
+  main .kine_respiratoria div {
+    flex-direction: column-reverse; }
+  main .kine_respiratoria div div h2 {
+    margin-top: 15px; }
+  main .kine_respiratoria div div p {
+    margin-bottom: 0px;
+    padding: 10px; }
+  main .kine_respiratoria div div .boton {
+    padding: 5px;
+    font-size: 16px; }
+  main .domicilio {
+    padding: 15px; }
+  main .domicilio div {
+    flex-direction: column; }
+  main .domicilio div div h2 {
+    margin-top: 15px; }
+  main .domicilio div div .boton {
+    padding: 5px;
+    font-size: 16px; } }
+
+@media screen and (max-width: 600px) {
+  main .kine_musculo div img {
+    width: 100%;
+    height: 100%; }
+  main .neuro_adulto .info_neuro img {
+    width: 100%;
+    height: 100%; }
+  main .kine_respiratoria div img {
+    width: 100%;
+    height: 100%; }
+  main .domicilio div img {
+    width: 100%;
+    height: 100%; } }
+
+@media screen and (max-width: 450px) {
+  .info_kinemusculo {
+    padding: 10px; }
+  main .kine_musculo div .info_kinemusculo h2 {
+    font-size: 18px; }
+  main .neuro_adulto .info_neuro div h2 {
+    font-size: 18px; }
+  main .neuro_adulto .info_neuro div {
+    padding: 10px; }
+  main .kine_respiratoria div div {
+    font-size: 18px; }
+  main .kine_respiratoria div div h2 {
+    font-size: 18px; }
+  main .domicilio div div {
+    padding: 10px; }
+  main .domicilio div div h2 {
+    font-size: 18px; } }
+
+@media screen and (max-width: 400px) {
+  main .kine_musculo div .info_kinemusculo h2 {
+    font-size: 17px; }
+  .info_kinemusculo {
+    padding: 0px; }
+  main .neuro_adulto .info_neuro div {
+    padding: 0px; }
+  main .kine_respiratoria div div h2 {
+    font-size: 17px; } }
+
+/*!---------MEDIA QUERY MASAJES------*/
+@media screen and (max-width: 1250px) {
+  main .masaje_relajante div .flex_masjrelajante .info_masjrelajante h2 {
+    font-size: 20px; }
+  main .masaje_relajante div .flex_masjrelajante .info_masjrelajante p {
+    font-size: 14px; }
+  main .masaje_relajante div .flex_masjrelajante .botones_masjrelajante p {
+    font-size: 14px; }
+  main .masaje_relajante div .flex_masjrelajante .botones_masjrelajante .boton {
+    padding: 5px;
+    font-size: 16px; }
+  main .masaje_descontracturante div .info_masjdescontracturante h2 {
+    font-size: 20px; }
+  main .masaje_descontracturante div .info_masjdescontracturante p {
+    font-size: 14px; }
+  main .masaje_descontracturante div .botones_masjdescontracturante div p {
+    font-size: 14px; }
+  main .masaje_descontracturante div .botones_masjdescontracturante div .boton {
+    padding: 5px;
+    font-size: 16px; }
+  main .masaje_cranealykine .masaje_craneal div h2 {
+    font-size: 20px; }
+  main .masaje_cranealykine .masaje_craneal div p {
+    font-size: 14px; }
+  main .masaje_cranealykine .masaje_craneal div .boton {
+    padding: 5px;
+    font-size: 16px; }
+  main .masaje_cranealykine .masaje_kine div h2 {
+    font-size: 20px; }
+  main .masaje_cranealykine .masaje_kine div p {
+    font-size: 14px; }
+  main .masaje_cranealykine .masaje_kine div .boton {
+    padding: 5px;
+    font-size: 16px; }
+  main .recovery h2 {
+    font-size: 20px; }
+  main .recovery p {
+    font-size: 14px; }
+  main .recovery .info_recovery .botones_recovery div .boton {
+    padding: 5px;
+    font-size: 18px; } }
+
+@media screen and (max-width: 1110px) {
+  main .masaje_cranealykine {
+    flex-direction: column; }
+  main .masaje_cranealykine .masaje_craneal {
+    margin-bottom: 20px; } }
+
+@media screen and (max-width: 1080px) {
+  main .masaje_relajante div {
+    padding: 5px; } }
+
+@media screen and (max-width: 1000px) {
+  main .masaje_relajante {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  main .masaje_relajante div {
+    flex-direction: column-reverse;
+    padding: 10px;
+    width: 600px; }
+  main .masaje_relajante div img {
+    width: 100%; }
+  main .masaje_relajante div .flex_masjrelajante .botones_masjrelajante {
+    flex-direction: row; }
+  main .masaje_descontracturante div {
+    padding: 5px; }
+  main .recovery div .img_botas {
+    margin: 5px; }
+  main .recovery div .img_masjrecovey {
+    margin: 5px; } }
+
+@media screen and (max-width: 780px) {
+  main .recovery img {
+    height: 300px; }
+  main .recovery div {
+    flex-direction: column; }
+  main .recovery div .img_botas {
+    width: 100%;
+    margin-bottom: 10px; }
+  main .recovery .info_recovery .botones_recovery {
+    flex-direction: row; } }
+
+@media screen and (max-width: 650px) {
+  main .masaje_relajante div {
+    width: 500px; } }
+
+@media screen and (max-width: 625px) {
+  main .masaje_descontracturante {
+    flex-direction: column; }
+  main .recovery div .img_botas {
+    height: 350px; } }
+
+@media screen and (max-width: 550px) {
+  main .masaje_relajante div {
+    width: 450px; }
+  main .masaje_relajante div img {
+    height: 40%; }
+  main .masaje_cranealykine .masaje_craneal {
+    width: 100%;
+    height: 100%; }
+  main .masaje_cranealykine .masaje_kine {
+    width: 100%;
+    height: 100; }
+  main .recovery div .img_masjrecovery {
+    height: 350px; } }
+
+@media screen and (max-width: 470px) {
+  main .masaje_relajante div {
+    width: 350px; }
+  main .recovery div .img_botas {
+    height: 300px; } }
+
+@media screen and (max-width: 430px) {
+  main .recovery img {
+    width: 70%; }
+  main .recovery div .img_masjrecovery {
+    height: 300px; } }
+
+@media screen and (max-width: 370px) {
+  main .masaje_relajante div {
+    width: 300px; }
+  main .masaje_descontracturante img {
+    width: 250px;
+    height: 350px; }
+  main .recovery div .img_botas {
+    height: 250px; } }
+
+/*!---------MEDIA QUERY SALUD LABORAL------*/
+@media screen and (max-width: 900px) {
+  main .contacto_saludlaboral div .saludlaboral_imagen {
+    width: 250px;
+    height: 350px; } }
+
+@media screen and (max-width: 700px) {
+  main .contacto_saludlaboral div .saludlaboral_imagen {
+    width: 200px;
+    height: 300px; }
+  main .contacto_saludlaboral div h3 {
+    font-size: 17px; }
+  main .contacto_saludlaboral div p {
+    font-size: 14px; } }
+
+@media screen and (max-width: 630px) {
+  main .salud_laboral {
+    margin: 30px; }
+  main .contacto_saludlaboral div {
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px;
+    margin: 30px; }
+  main .contacto_saludlaboral div div {
+    margin: 20px 0px 20px 0px; } }
+
+@media screen and (max-width: 520px) {
+  main .salud_laboral {
+    margin: 10px; }
+  main .contacto_saludlaboral div {
+    margin: 10px; }
+  main .contacto_saludlaboral div .saludlaboral_imgen {
+    width: 60%;
+    height: 350px; }
+  main .contacto_saludlaboral div div {
+    margin-right: 5px; } }
+
+/*!---------MEDIA QUERY RESERVA------*/
+@media screen and (max-width: 700px) {
+  main .flex_reserva .reserva h2 {
+    font-size: 25px; }
+  main .flex_dudas .dudas h2 {
+    font-size: 25px; } }
+
+@media screen and (max-width: 500px) {
+  main .flex_reserva .reserva h2 {
+    font-size: 20px; }
+  main .flex_dudas .dudas h2 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 430px) {
+  main .flex_reserva .reserva .form-check {
+    display: flex;
+    flex-direction: row; } }
+
+/*!--------MEDIA QUERY FOOTER------*/
+@media screen and (max-width: 900px) {
+  footer .piedepagina {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "iconos horarios" "iframe iframe" "h3 h3"; }
+  footer .piedepagina iframe {
+    grid-column: span2; }
+  footer .piedepagina .iconos div p {
+    font-size: 15px; }
+  footer .piedepagina .horarios p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 550px) {
+  footer .piedepagina {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "iconos" "horarios" "iframe" "h3"; }
+  footer .piedepagina .iconos {
+    justify-self: center;
+    padding-top: 10px;
+    margin-top: 15px; }
+  footer .piedepagina .horarios {
+    justify-self: center;
+    align-self: center;
+    margin-left: 40px; } }

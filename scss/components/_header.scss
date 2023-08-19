@@ -1,0 +1,22 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    .navbar {
+        background-color: #788393;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        .container-fluid {
+            .navbar-brand {
+                h1 {
+                    font-family: 'Rubik Dirt', cursive;
+                    color: whitesmoke;
+                    font-weight: 500;
+                    span {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

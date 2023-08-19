@@ -1,0 +1,93 @@
+/*!--MAIN FOOTER--*/
+footer {
+    background-color: #aab9cf;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    font-size: 17px;
+    .piedepagina {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "iconos horarios iframe"
+        "h3 h3 h3";
+        .iconos {
+            justify-self: start;
+            align-self: start;
+            margin-top: 50px;
+            grid-area: iconos;
+            div {
+                display: flex;
+                justify-content: start;
+                align-items:center;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin: 20px;
+                }
+                p {
+                    margin: 0px;
+                }
+            }
+            div {
+                display: flex;
+                justify-content: start;
+                align-items:center;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin: 20px;
+                }
+                p {
+                    margin: 0px;
+                }
+            }
+            div {
+                display: flex;
+                justify-content: start;
+                align-items:center;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin: 20px;
+                }
+                p {
+                    margin: 0px;
+                }
+            }
+        }
+        .horarios {
+            justify-self: start;
+            align-self: center;
+            grid-area: horarios;
+            margin-top: 20px;
+            h2 {
+                font-weight: 200;
+                padding-bottom: 0px;
+                margin-bottom: 15px;
+            }
+        }
+        div {
+            iframe {
+                width: 100%;
+                justify-self: center;
+                align-self: center;
+                padding: 15px;
+                grid-area: iframe;
+            }
+        }
+        h3 {
+            background-color: #005e7c;
+            color: white;
+            text-decoration: none;
+            font-family: 'Rubik Dirt', cursive;
+            border: 1px solid black;
+            margin-bottom: 0%;
+            grid-area: h3;
+            span {
+                color: black;
+            }
+        }
+    }
+}

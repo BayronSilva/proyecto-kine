@@ -29,19 +29,19 @@ header {
     z-index: 10;
 }
 
-header nav {
+header .navbar {
     background-color: #788393;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
 }
 
-header nav div h1 {
+header .navbar .container-fluid .navbar-brand h1 {
     font-family: 'Rubik Dirt', cursive;
     color: whitesmoke;
     font-weight: 500;
 }
 
-header nav div h1 span {
+header .navbar .container-fluid .navbar-brand h1 span {
     color: black;
 }
 
@@ -92,12 +92,12 @@ main .carrusel h2 {
     margin-top: 20px
 }
 
-main .carousel-inner img {
+main .carousel-inner .carousel-item img {
     width: 450px;
     height: 400px;
 }
 
-main .carousel-inner h5 {
+main .carousel-inner .carousel-item .carousel-caption a h5 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: black;
     font-size: 20px;
@@ -134,18 +134,19 @@ main .valores div div p{
     padding-top: 10px;
 }
 
-.servicios_hermanos > div{
+/* .servicios_hermanos div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-}
+} */
 
 .servicios_hermanos div h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 31px;
     color: black;
+    text-align: center;
 }
 
 .servicios_hermanos div .tarjetas{
@@ -239,7 +240,7 @@ main .kine_musculo div img{
     height: 400px;
 }
 
-.kine_musculo div{
+main .kine_musculo div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -798,6 +799,11 @@ footer h3 span{
 }
 
 /*!---------MEDIA QUERY HEADER---------*/
+@media screen and (max-width:1000px) {
+    header{
+        position: static;
+    }
+}
 
 /*!---------MEDIA QUERY INDEX------*/
 @media screen and (max-width:1000px) {
