@@ -1,30 +1,16 @@
-/*!-----------HEADER-------------*/
-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    .navbar {
-        background-color: #788393;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: white;
-    }
-}
 /*!--------------MAIN INDEX-------------*/
 main {
     .hero {
         div {
-            background-image: url(../img/foto_herosection.jpg);
+            background:linear-gradient(rgba(255, 255, 255, 0.545), #005d7c74), url(../img/foto_herosection.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
             height: 70vh;
             font-weight: 500;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
+            @include flex (flex, column, space-around, center);
             h2{
-                font-size: 75px;
+                font-size: $font-size-titulo_hero;
                 font-weight: 600;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 text-align: center;
@@ -34,7 +20,6 @@ main {
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 margin: 0px;
                 text-align: center;
-                background-color: rgba(255, 255, 255, 0.214);
                 padding: 30px;}
         }
     }
@@ -42,13 +27,11 @@ main {
         width: 100%;
         height: 400px;
         margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         flex-direction: column;
         h2 {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 31px;
+            font-size: $font-size-titulos;
             color: black;
             margin-top: 20px
         }
@@ -63,8 +46,8 @@ main {
                         a {
                             h5 {
                                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                                background-color: black;
-                                font-size: 20px;
+                                background-color: nth($paleta-colores, 3);
+                                font-size: $font-size-titulo_carrusel;
                                 color: white;
                             }
                         }
@@ -74,9 +57,7 @@ main {
         }
     }
     .contenedor_valores {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         margin-top: 20px;
         .valores {
             width: 70%;
@@ -89,11 +70,10 @@ main {
             border: 5px solid #040f16;
             div {
                 padding: 20px;
-                display: flex;
+                @extend %flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 p {
+                    font-size: $font-size-textos;
                     padding-top: 10px;
                 }
             }
@@ -103,7 +83,7 @@ main {
         div {
             h2 {
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                font-size: 31px;
+                font-size: $font-size-titulos;
                 color: black;
                 text-align: center;
             }
@@ -119,26 +99,25 @@ main {
                     box-shadow: 10px -11px 9px -2px rgba(22,21,21,0.75);
                     -webkit-box-shadow: 10px -11px 9px -2px rgba(22,21,21,0.75);
                     -moz-box-shadow: 10px -11px 9px -2px rgba(22,21,21,0.75);
-                    background-color: #040f16;
+                    background-color: nth($paleta-colores, 4);
                     color: white;
                     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                     padding: 15px;
                     margin-top: 20px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    align-items: center;
+                    @include flex(flex, column, space-between, center);
                     img {
                         width: 100%;
                         height: 250px;
                         object-fit: cover;
                     }
                     h3 {
+                        font-size: $font-size-titulos_tarjetas;
                         text-align: center;
                         margin-bottom: 15px;
                     }
                     p {
                         margin-bottom: 5px;
+                        font-size: $font-size-textos;
                     }
                     .cejas {
                         margin-bottom: 25px;
@@ -154,20 +133,18 @@ main {
                     box-shadow: 10px -11px 9px -2px rgba(22,21,21,0.75);
                     -webkit-box-shadow: 10px -11px 9px -2px rgba(22,21,21,0.75);
                     -moz-box-shadow: 10px -11px 9px -2px rgba(22,21,21,0.75);
-                    background-color: #040f16;
+                    background-color: nth($paleta-colores, 4);
                     color: white;
                     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                     padding: 15px;
                     margin-top: 20px;
                     text-align: center;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    align-items: center;
+                    @include flex (flex, column, space-between, center);
                     img {    
                         width: 100%;
                         height: 250px;}
                     h3 {
+                        font-size: $font-size-titulos_tarjetas;
                         text-align: center;
                         margin-bottom: 15px;
                     }
@@ -192,17 +169,15 @@ main {
             justify-content: space-between;
             align-items: center;
             .info_kinemusculo {
-                display:flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
+                @include flex ( flex, column, space-between, center);
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 text-align: center;
                 h2 {
-                    font-size: 25px;
+                    font-size: $font-size-titulos_tarjetas;
                     font-weight: 600;
                 }
                 p {
+                    font-size: $font-size-textos;
                     padding: 20px;
                 }
             }
@@ -213,7 +188,7 @@ main {
         }
     }
     .neuro_adulto {
-        background-color: #040f16;
+        background-color: nth($paleta-colores, 4);
         color: white;
         padding: 10px;
         margin: 20px; 
@@ -233,15 +208,13 @@ main {
                 height: 400px;
             }
             div {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
+                @include flex (flex, column, space-between, center);
                 h2 {
-                    font-size: 25px;
+                    font-size: $font-size-titulos_tarjetas;
                     font-weight: 600;
                 }
                 p {
+                    font-size: $font-size-textos;
                     padding: 20px;
                     margin-bottom: 20px;
                 }
@@ -260,16 +233,14 @@ main {
                 width: 80%;
                 text-align:start;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
+                @include flex (flex, column, space-between, center);
                 text-align: center;
                 h2 {
-                    font-size: 25px;
+                    font-size: $font-size-titulos_tarjetas;
                     font-weight: 600;
                 }
                 p {
+                    font-size: $font-size-textos;
                     padding: 20px;
                     margin-bottom: 20px;
                 }
@@ -283,7 +254,7 @@ main {
     .domicilio {
         padding: 30px;
         div {
-            background-color: #040f16;
+            background-color: nth($paleta-colores, 4);
             color: white;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             padding: 10px;
@@ -297,15 +268,14 @@ main {
                 height: 400px;
             }
             div {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
+                @include flex (flex, column, space-between, center);
                 h2 {
+                    font-size: $font-size-titulos_tarjetas;
                     font-size: 25px;
                     font-weight: 600;
                 }
                 p {
+                    font-size: $font-size-textos;
                     padding: 20px;
                     margin-bottom: 20px;
                 }
@@ -313,7 +283,7 @@ main {
         }
     }
 }
-/*!---------------MAIN MASAJES Y RECOVERTY-----------*/
+/*!---------------MAIN MASAJES Y RECOVERY-----------*/
 main {
     .masaje_relajante {
         padding: 30px;
@@ -321,20 +291,19 @@ main {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #040f16;
+            background-color: nth($paleta-colores, 4);
             color: white;
             padding: 10px;
             .flex_masjrelajante {
                 display: flex;
                 flex-direction: column;
                 .info_masjrelajante {
-                    display: flex;
+                    @extend %flex;
                     flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
                     text-align: center;
                     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                     h2 {
+                        font-size: $font-size-titulos_tarjetas;
                         font-size: 25px;
                         font-weight: 600;
                     }
@@ -346,6 +315,7 @@ main {
                     align-items: center;
                     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                     div {
+                        display: flex;
                         flex-direction: column;
                         p {
                             text-align: center;
@@ -371,14 +341,12 @@ main {
         div {
             padding: 10px;
             .info_masjdescontracturante {
-                display: flex;
+                @extend %flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 text-align: center;
                 h2 {
-                    font-size: 25px;
+                    font-size: $font-size-titulos_tarjetas;
                     font-weight: 600;
                 }
             }
@@ -396,71 +364,61 @@ main {
         }
     }
     .masaje_cranealykine {
-        background-color:#005d7c84;
+        background: linear-gradient(#040f1632,#005d7ccd);
         padding: 30px;
         margin: 15px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         .masaje_craneal {
-            background-color: #040f16;
+            background-color: nth($paleta-colores, 4);
             width: 450px;
             height: 650px;
             border: 1px solid white;
             color: white;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
+            @include flex(flex, column, space-evenly, center);
             img {
                 width: 100%;
                 height: 70%;
                 padding: 5px;
             }
             div {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
+                @include flex(flex, column, space-around, center);
                 text-align: center;
                 padding: 5px;
                 h2 {
-                    font-size: 25px;
+                    font-size: $font-size-titulos_tarjetas;
                 }
                 p {
+                    font-size: $font-size-textos;
                     padding: 5px;
                     margin: 0px
                 }
             }
         }
         .masaje_kine {
-            background-color: #040f16;
+            background-color: nth($paleta-colores, 4);
             width: 450px;
             height: 650px;
             border: 1px solid white;
             color: white;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
+            @include flex(flex, column, space-evenly, center);
             img {
                 width: 100%;
                 height: 70%;
                 padding: 5px;
             }
             div {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
+                @include flex(flex, column, space-around, center);
                 text-align: center;
                 padding: 5px;
                 h2 {
-                    font-size: 25px;
+                    font-size: $font-size-titulos_tarjetas;
                 }
                 p {
+                    font-size: $font-size-textos;
                     padding: 5px;
                     margin: 0px;
                 }
@@ -469,18 +427,13 @@ main {
     }
     .recovery {
         padding: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(flex, column, space-around, center);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         h2 {
-            font-size: 25px;
+            font-size: $font-size-titulos_tarjetas;
         }
         div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex;
             .img_botas {
                 width: 55%;
                 height: 400px;
@@ -495,50 +448,53 @@ main {
         .info_recovery {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             text-align: center;
-            display: flex;
+            @extend %flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             padding: 20px;
             margin-bottom: 20px;
             p {
+                font-size: $font-size-textos;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             }
-            p {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
-            p {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+            p {
+                font-size: $font-size-textos;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            p {
+                font-size: $font-size-textos;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
             .botones_recovery {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @extend %flex;
                 div {
-                    display: flex;
+                    @extend %flex;
                     flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
                     margin: 30px;
                     p {
                         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                     }
                 }
             }
-            }
         }
     }
+}
 /*!------------------MAIN SALUD LABORAL--------*/
 main {
     .salud_laboral {
-        background-color: #005d7c74;
+        background: linear-gradient(#040f1632,#005d7ccd);
         background-position: center;
         margin: 60px;
         padding: 30px;
         height: 80%vh;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        display: flex;
+        @extend %flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         h2 {
+            font-size: $font-size-titulos;
             margin-bottom: 20px;
+        }
+        p {
+            font-size: $font-size-textos;
         }
     }
     .contacto_saludlaboral {
@@ -548,11 +504,9 @@ main {
             align-items: center;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             div {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: start;
+                @include flex(flex, column, center, start);
                 h3 {
+                font-size: $font-size-titulos_tarjetas;
                 margin-bottom: 20px;
                 }
             }
@@ -568,9 +522,7 @@ main {
     .flex_reserva{
         width: 100%;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         flex-direction: column;
         .reserva {
             width: 70%;
@@ -589,9 +541,7 @@ main {
     }
     .flex_dudas {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         flex-direction: column;
         .dudas {
             width: 70%;

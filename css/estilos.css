@@ -1,5 +1,10 @@
-/*!-------------TIPOGRAFIA----------*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+main .carrusel, main .contenedor_valores, main .contenedor_valores .valores div, main .masaje_relajante div .flex_masjrelajante .info_masjrelajante, main .masaje_descontracturante div .info_masjdescontracturante, main .recovery div, main .recovery .info_recovery, main .recovery .info_recovery .botones_recovery, main .recovery .info_recovery .botones_recovery div, main .salud_laboral, main .flex_reserva, main .flex_dudas {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/*!---TIPOGRAFIA------*/
 /*!-------------RESET---------------*/
 * {
   margin: 0;
@@ -16,7 +21,8 @@ a {
   padding: 10px;
   border: 2px solid white;
   background-color: black;
-  color: white; }
+  color: white;
+  transition-duration: 1s; }
 
 /*!-------PSEUDO CLASES------*/
 .boton:hover {
@@ -24,13 +30,19 @@ a {
   border: 2px solid black;
   color: black; }
 
+.nav-link:hover {
+  transform: scale(1.1);
+  box-shadow: 10px -11px 9px -2px rgba(22, 21, 21, 0.522);
+  -webkit-box-shadow: 10px -11px 9px -2px rgba(22, 21, 21, 0.504);
+  -moz-box-shadow: 10px -11px 9px -2px rgba(22, 21, 21, 0.421); }
+
 .boton:active {
   color: darkred; }
 
-.servicios_hermanos div .tarjetas div i:hover {
+.servicios_hermanos div .tarjetas div .bi-instagram:hover {
   color: darkred; }
 
-.servicios_hermanos div .tarjetas div i:active {
+.servicios_hermanos div .tarjetas div .bi-instagram:active {
   color: white; }
 
 /*!-------PSEUDOELEMENTOS-----*/
@@ -85,20 +97,12 @@ header {
       font-weight: 500; }
       header .navbar .container-fluid .navbar-brand h1 span {
         color: black; }
-
-/*!-----------HEADER-------------*/
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10; }
-  header .navbar {
-    background-color: #788393;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white; }
+      header .navbar .container-fluid .navbar-brand h1 .collapse .navbar-nav .nav-link {
+        transition-duration: 1s; }
 
 /*!--------------MAIN INDEX-------------*/
 main .hero div {
-  background-image: url(../img/foto_herosection.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.545), #005d7c74), url(../img/foto_herosection.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -118,16 +122,12 @@ main .hero div {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.214);
     padding: 30px; }
 
 main .carrusel {
   width: 100%;
   height: 400px;
   margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column; }
   main .carrusel h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -144,9 +144,6 @@ main .carrusel {
     color: white; }
 
 main .contenedor_valores {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 20px; }
   main .contenedor_valores .valores {
     width: 70%;
@@ -159,11 +156,9 @@ main .contenedor_valores {
     border: 5px solid #040f16; }
     main .contenedor_valores .valores div {
       padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+      flex-direction: column; }
       main .contenedor_valores .valores div p {
+        font-size: 16px;
         padding-top: 10px; }
 
 main .servicios_hermanos div h2 {
@@ -198,10 +193,12 @@ main .servicios_hermanos div .tarjetas {
       height: 250px;
       object-fit: cover; }
     main .servicios_hermanos div .tarjetas .paulettelash h3 {
+      font-size: 25px;
       text-align: center;
       margin-bottom: 15px; }
     main .servicios_hermanos div .tarjetas .paulettelash p {
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      font-size: 16px; }
     main .servicios_hermanos div .tarjetas .paulettelash .cejas {
       margin-bottom: 25px; }
     main .servicios_hermanos div .tarjetas .paulettelash .bi-instagram {
@@ -227,6 +224,7 @@ main .servicios_hermanos div .tarjetas {
       width: 100%;
       height: 250px; }
     main .servicios_hermanos div .tarjetas .greenfort h3 {
+      font-size: 25px;
       text-align: center;
       margin-bottom: 15px; }
     main .servicios_hermanos div .tarjetas .greenfort p {
@@ -253,6 +251,7 @@ main .kine_musculo {
         font-size: 25px;
         font-weight: 600; }
       main .kine_musculo div .info_kinemusculo p {
+        font-size: 16px;
         padding: 20px; }
     main .kine_musculo div img {
       width: 600px;
@@ -286,6 +285,7 @@ main .neuro_adulto {
         font-size: 25px;
         font-weight: 600; }
       main .neuro_adulto .info_neuro div p {
+        font-size: 16px;
         padding: 20px;
         margin-bottom: 20px; }
 
@@ -310,6 +310,7 @@ main .kine_respiratoria {
         font-size: 25px;
         font-weight: 600; }
       main .kine_respiratoria div div p {
+        font-size: 16px;
         padding: 20px;
         margin-bottom: 20px; }
     main .kine_respiratoria div img {
@@ -338,12 +339,14 @@ main .domicilio {
       align-items: center; }
       main .domicilio div div h2 {
         font-size: 25px;
+        font-size: 25px;
         font-weight: 600; }
       main .domicilio div div p {
+        font-size: 16px;
         padding: 20px;
         margin-bottom: 20px; }
 
-/*!---------------MAIN MASAJES Y RECOVERTY-----------*/
+/*!---------------MAIN MASAJES Y RECOVERY-----------*/
 main .masaje_relajante {
   padding: 30px; }
   main .masaje_relajante div {
@@ -357,13 +360,11 @@ main .masaje_relajante {
       display: flex;
       flex-direction: column; }
       main .masaje_relajante div .flex_masjrelajante .info_masjrelajante {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
         main .masaje_relajante div .flex_masjrelajante .info_masjrelajante h2 {
+          font-size: 25px;
           font-size: 25px;
           font-weight: 600; }
       main .masaje_relajante div .flex_masjrelajante .botones_masjrelajante {
@@ -373,6 +374,7 @@ main .masaje_relajante {
         align-items: center;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
         main .masaje_relajante div .flex_masjrelajante .botones_masjrelajante div {
+          display: flex;
           flex-direction: column; }
           main .masaje_relajante div .flex_masjrelajante .botones_masjrelajante div p {
             text-align: center; }
@@ -391,10 +393,7 @@ main .masaje_descontracturante {
   main .masaje_descontracturante div {
     padding: 10px; }
     main .masaje_descontracturante div .info_masjdescontracturante {
-      display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       text-align: center; }
       main .masaje_descontracturante div .info_masjdescontracturante h2 {
@@ -409,7 +408,7 @@ main .masaje_descontracturante {
         text-align: center; }
 
 main .masaje_cranealykine {
-  background-color: #005d7c84;
+  background: linear-gradient(#040f1632, #005d7ccd);
   padding: 30px;
   margin: 15px;
   display: flex;
@@ -440,6 +439,7 @@ main .masaje_cranealykine {
       main .masaje_cranealykine .masaje_craneal div h2 {
         font-size: 25px; }
       main .masaje_cranealykine .masaje_craneal div p {
+        font-size: 16px;
         padding: 5px;
         margin: 0px; }
   main .masaje_cranealykine .masaje_kine {
@@ -467,6 +467,7 @@ main .masaje_cranealykine {
       main .masaje_cranealykine .masaje_kine div h2 {
         font-size: 25px; }
       main .masaje_cranealykine .masaje_kine div p {
+        font-size: 16px;
         padding: 5px;
         margin: 0px; }
 
@@ -479,60 +480,49 @@ main .recovery {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
   main .recovery h2 {
     font-size: 25px; }
-  main .recovery div {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    main .recovery div .img_botas {
-      width: 55%;
-      height: 400px;
-      margin: 20px; }
-    main .recovery div .img_masjrecovery {
-      width: 55%;
-      height: 400px;
-      margin: 20px; }
+  main .recovery div .img_botas {
+    width: 55%;
+    height: 400px;
+    margin: 20px; }
+  main .recovery div .img_masjrecovery {
+    width: 55%;
+    height: 400px;
+    margin: 20px; }
   main .recovery .info_recovery {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
     margin-bottom: 20px; }
     main .recovery .info_recovery p {
+      font-size: 16px;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
     main .recovery .info_recovery p {
+      font-size: 16px;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
     main .recovery .info_recovery p {
+      font-size: 16px;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
-    main .recovery .info_recovery .botones_recovery {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      main .recovery .info_recovery .botones_recovery div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 30px; }
-        main .recovery .info_recovery .botones_recovery div p {
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+    main .recovery .info_recovery .botones_recovery div {
+      flex-direction: column;
+      margin: 30px; }
+      main .recovery .info_recovery .botones_recovery div p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 /*!------------------MAIN SALUD LABORAL--------*/
 main .salud_laboral {
-  background-color: #005d7c74;
+  background: linear-gradient(#040f1632, #005d7ccd);
   background-position: center;
   margin: 60px;
   padding: 30px;
   height: 80%vh;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column; }
   main .salud_laboral h2 {
+    font-size: 31px;
     margin-bottom: 20px; }
+  main .salud_laboral p {
+    font-size: 16px; }
 
 main .contacto_saludlaboral div {
   display: flex;
@@ -545,6 +535,7 @@ main .contacto_saludlaboral div {
     justify-content: center;
     align-items: start; }
     main .contacto_saludlaboral div div h3 {
+      font-size: 25px;
       margin-bottom: 20px; }
   main .contacto_saludlaboral div .saludlaboral_imagen {
     width: 300px;
@@ -554,9 +545,6 @@ main .contacto_saludlaboral div {
 main .flex_reserva {
   width: 100%;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column; }
   main .flex_reserva .reserva {
     width: 70%;
@@ -572,9 +560,6 @@ main .flex_reserva {
 
 main .flex_dudas {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column; }
   main .flex_dudas .dudas {
     width: 70%;
@@ -630,6 +615,7 @@ footer {
           height: 30px;
           margin: 20px; }
         footer .piedepagina .iconos div p {
+          font-size: 16px;
           margin: 0px; }
     footer .piedepagina .horarios {
       justify-self: start;
@@ -637,6 +623,7 @@ footer {
       grid-area: horarios;
       margin-top: 20px; }
       footer .piedepagina .horarios h2 {
+        font-size: 25px;
         font-weight: 200;
         padding-bottom: 0px;
         margin-bottom: 15px; }
