@@ -37,6 +37,7 @@ main {
         }
         .carousel {
             .carousel-inner {
+                max-width: 600px;
                 .carousel-item {
                     img {
                         width: 600px;

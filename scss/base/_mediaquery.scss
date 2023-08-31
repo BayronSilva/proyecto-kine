@@ -17,6 +17,9 @@
     main .hero div .boton {
         font-size: 16px;
     }
+    main .carrusel .carousel .carousel-inner .carousel-item .carousel-caption a h5 {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width:630px) {
@@ -30,6 +33,9 @@
     main .servicios_hermanos div .tarjetas {
         flex-direction: column;
     }
+    main .carrusel .carousel .carousel-inner {
+        max-width: 500px;
+    }
     main .carrusel .carousel .carousel-inner .carousel-item img {
         width: 550px;
         height: 350px; 
@@ -37,6 +43,9 @@
 }
 
 @media screen and (max-width: 540px) {
+    main .carrusel .carousel .carousel-inner {
+        max-width: 400px;
+    }
     main .carrusel .carousel .carousel-inner .carousel-item img {
         width: 500px;
         height: 300px; 
@@ -54,6 +63,9 @@
         font-size: 40px;
         padding: 20px;
     }
+    main .carrusel .carousel .carousel-inner {
+        max-width: 350px;
+    }
     main .carrusel .carousel .carousel-inner .carousel-item img {
         width: 450px;
         height: 250px; 
@@ -61,9 +73,15 @@
 }
 
 @media screen and (max-width: 390px) {
+    main .carrusel .carousel .carousel-inner {
+        max-width: 300px;
+    }
     main .carrusel .carousel .carousel-inner .carousel-item img {
         width: 400px;
         height: 200px; 
+    }
+    main .carrusel .carousel .carousel-inner .carousel-item .carousel-caption a h5 {
+        font-size: 14px;
     }
 }
 /*!---------MEDIA QUERY KINESIOLOGIA------*/
