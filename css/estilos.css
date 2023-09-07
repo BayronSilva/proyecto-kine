@@ -98,7 +98,7 @@ header {
       header .navbar .container-fluid .navbar-brand h1 span {
         color: black; }
       header .navbar .container-fluid .navbar-brand h1 .collapse .navbar-nav .nav-link {
-        transition-duration: 1s; }
+        transition-duration: 3s; }
 
 /*!--------------MAIN INDEX-------------*/
 main .hero div {
@@ -106,7 +106,7 @@ main .hero div {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   font-weight: 500;
   display: flex;
   flex-direction: column;
@@ -120,6 +120,7 @@ main .hero div {
   main .hero div p {
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
     margin: 0px;
     text-align: center;
     padding: 30px; }
@@ -657,15 +658,13 @@ footer {
     font-size: 60px; }
   main .hero div p {
     font-size: 14px;
-    padding: 20px; }
+    padding: 25px; }
   main .hero div .boton {
     font-size: 16px; }
   main .carrusel .carousel .carousel-inner .carousel-item .carousel-caption a h5 {
     font-size: 16px; } }
 
 @media screen and (max-width: 630px) {
-  main .hero div p {
-    padding: 10px; }
   main .hero div .boton {
     font-size: 14px;
     padding: 5px; }
@@ -699,6 +698,8 @@ footer {
     height: 250px; } }
 
 @media screen and (max-width: 390px) {
+  main .hero div p {
+    padding: 15px; }
   main .carrusel .carousel .carousel-inner {
     max-width: 300px; }
   main .carrusel .carousel .carousel-inner .carousel-item img {

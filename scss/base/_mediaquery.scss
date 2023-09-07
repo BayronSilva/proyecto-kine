@@ -12,7 +12,7 @@
     }
     main .hero div p {
         font-size: 14px;
-        padding: 20px;
+        padding: 25px;
     }
     main .hero div .boton {
         font-size: 16px;
@@ -23,9 +23,6 @@
 }
 
 @media screen and (max-width:630px) {
-    main .hero div p {
-        padding: 10px;
-    }
     main .hero div .boton {
         font-size: 14px;
         padding: 5px;
@@ -73,6 +70,9 @@
 }
 
 @media screen and (max-width: 390px) {
+    main .hero div p {
+        padding: 15px;
+    }
     main .carrusel .carousel .carousel-inner {
         max-width: 300px;
     }
