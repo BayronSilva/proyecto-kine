@@ -483,6 +483,8 @@ main {
     .salud_laboral {
         background: linear-gradient(#040f1632,#005d7ccd);
         background-position: center;
+        border: 3px black solid;
+        border-radius: 20% 0 20% 0;
         margin: 60px;
         padding: 30px;
         height: 80%vh;
