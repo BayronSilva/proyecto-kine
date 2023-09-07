@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <!--ANIMACIONES-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--css-->
     <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <!--FAVICON-->
@@ -44,17 +46,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="../pages/kinesiologia.html">Kinesiología</a>
-                        <a class="nav-link active" aria-current="page" href="../pages/masajes_recovery.html">Masajes y Recovery</a>
-                        <a class="nav-link active" aria-current="page" href="../pages/salud_laboral.html">Salud Laboral</a>
-                        <a class="nav-link active" aria-current="page" href="../pages/reserva.html">Reserva de Hora y Consultas</a>
+                        <a class="nav-link active text-white" aria-current="page" href="../pages/kinesiologia.html">Kinesiología</a>
+                        <a class="nav-link active text-white" aria-current="page" href="../pages/masajes_recovery.html">Masajes y Recovery</a>
+                        <a class="nav-link active text-white" aria-current="page" href="../pages/salud_laboral.html">Salud Laboral</a>
+                        <a class="nav-link active text-white" aria-current="page" href="../pages/reserva.html">Reserva de Hora y Consultas</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="kine_musculo">
+        <section data-aos="fade-up" data-aos-duration="2000" class="kine_musculo">
             <div>
                 <div class="info_kinemusculo">
                     <h2>Kinesiología Musculoesquelética</h2>
@@ -67,7 +69,7 @@
                 <img src="../img/kinesiologia_musculoesqueletica.jpg" alt="imagen de sesion de kinesiologia traumatologica" />
             </div>
         </section>
-        <section class="neuro_adulto">
+        <section data-aos="fade-up" data-aos-duration="2000" class="neuro_adulto">
             <div class="info_neuro">
                 <img src="../img/neurorehabilitacion_adulto.jpg" alt="imagen de sesion de neurorehabilitacion adulto" />
                 <div>
@@ -79,7 +81,7 @@
                 </div>
             </div>
         </section>
-        <section class="kine_respiratoria">
+        <section data-aos="fade-up" data-aos-duration="2000" class="kine_respiratoria">
             <div>
                 <div>
                     <h2>Kinesiología Respiratoria</h2>
@@ -93,7 +95,7 @@
                 <img src="../img/kinesiologia_respiratoria.jpg" alt="imagen de fonendoscopio usado en evaluación respiratoria" />
             </div>
         </section>
-        <section class="domicilio">
+        <section data-aos="fade-up" data-aos-duration="2000" class="domicilio">
             <div>
                 <img src="../img/kinesiologia_a_domicilio.jpg" alt="imagen de kinesiologia a domicilio" />
                 <div>
@@ -132,8 +134,14 @@
             <h3><span>PRO</span>yecto KINE</h3>
         </div>
     </footer>
+    <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <!--AOS-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
 </body>
 </html>
