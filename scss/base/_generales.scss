@@ -1,4 +1,4 @@
-/*!---TIPOGRAFIA------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 
 /*!-------------RESET---------------*/
@@ -36,14 +36,14 @@ a{
         -moz-box-shadow: 10px -11px 9px -2px rgba(22, 21, 21, 0.421);
     }
 
-    .paulettelash:hover {
+    .servicios_hermanos div .tarjetas .paulettelash:hover {
         transform:  scale(103%);
         box-shadow: 10px -11px 9px -2px rgba(22,21,21,0.75);
         -webkit-box-shadow: 10px -11px 9px -2px rgba(22,21,21,0.75);
         -moz-box-shadow: 10px -11px 9px -2px rgba(22,21,21,0.75);
     }
 
-    .greenfort:hover {
+    .servicios_hermanos div .tarjetas .greenfort:hover {
         transform: scale(103%);
         box-shadow: 10px -11px 9px -2px rgba(22,21,21,0.75);
         -webkit-box-shadow: 10px -11px 9px -2px rgba(22,21,21,0.75);
@@ -54,12 +54,20 @@ a{
         color: darkred;
     }
 
-    .servicios_hermanos div .tarjetas div .bi-instagram:hover {
+    .servicios_hermanos div .tarjetas .paulettelash .bi-instagram:hover {
         color:darkred;
     }
 
-    .servicios_hermanos div .tarjetas div .bi-instagram:active {
+    .servicios_hermanos div .tarjetas .paulettelash .bi-instagram:active {
         color: white;
+    }
+
+    .servicios_hermanos div .tarjetas .greenfort .bi-instagram:hover {
+        color:darkred;
+    }
+
+    .servicios_hermanos div .tarjetas .greenfort .bi-instagram:active {
+        color:darkred;
     }
 
     /*!-------PSEUDOELEMENTOS-----*/
